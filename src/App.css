@@ -4,7 +4,8 @@
 }
 .App {
   text-align: center;
-  background-image: url("/public/bg2.jpg");
+  background-image: url("/public/background2.jpg");
+ 
   background-size:cover;
   background-position: center;
   min-height: 100vh;
