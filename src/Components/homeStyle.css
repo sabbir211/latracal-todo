@@ -32,6 +32,7 @@ form {
     border-radius: 3px;
     text-transform: uppercase;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .addButton:hover {
