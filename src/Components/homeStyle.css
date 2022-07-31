@@ -1,0 +1,101 @@
+.headline {
+    -webkit-text-stroke: 1px #ffff;
+    -webkit-text-fill-color: transparent;
+    font-size: calc(1.02rem + 5vw);
+    padding-top: 5vh;
+}
+
+form {
+    margin: calc(10px + 7vh) 0px;
+}
+
+.inputField {
+    padding: 10px 15px;
+    border: none;
+    border-bottom: 4px solid rgb(57, 47, 197);
+    background-color: rgba(255, 255, 255, 0.164);
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+    width: 300px;
+    border-radius: 4px;
+}
+
+.inputField:focus {
+    outline: none;
+}
+
+.addButton {
+    padding: 15px 30px;
+    background-color: rgba(255, 255, 255, 0.164);
+    border: 1px solid white;
+    color: white;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.addButton:hover {
+    background-color: rgba(255, 255, 255, 0.568);
+}
+
+.todoSection {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.singleTodo {
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    background-color: rgba(85, 100, 168, 0.616);
+    margin: 10px;
+    font-weight: 600;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.singleTodo:hover {
+    background-color: rgba(69, 39, 201, 0.582);
+
+}
+
+.singleTodo::before {
+    content: '';
+    padding: 5px;
+    position: absolute;
+    width: 150px;
+    top: 0;
+    left: 0;
+    margin-left: -50px;
+    border: 2px solid rgb(219, 101, 32);
+    transform: rotate(-45deg);
+}
+
+.singleTodo::after {
+    content: '';
+    padding: 5px;
+    position: absolute;
+    width: 150px;
+    bottom: 0;
+    right: 0;
+    margin-right: -50px;
+    border: 2px solid rgb(219, 101, 32);
+    transform: rotate(-45deg);
+}
+
+@media screen and (max-width:576px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+
+    .singleTodo {
+        width: 80vw;
+    }
+}

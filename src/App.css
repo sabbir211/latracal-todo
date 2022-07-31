@@ -1,7 +1,18 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 .App {
   text-align: center;
+  background-image: url("/public/bg2.jpg");
+  background-size:cover;
+  background-position: center;
+  min-height: 100vh;
+  color: white;
+  background-attachment: fixed;
 }
 
+/* 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -14,7 +25,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +46,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
